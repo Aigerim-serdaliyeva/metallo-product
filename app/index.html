@@ -440,21 +440,20 @@
 
     <section class="section section-dostavka">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="section-title">Доставка и оплата</div> 
-          </div>
-        </div>
+        <div class="section-title">Доставка и оплата</div> 
 
         <div class="section-dostavka-content">
           <div class="dostavka-block">
-            <div class="dostavka-block-1">
+            <div class="dostavka">
+              <div class="dostavka-title">Формы оплаты:</div>
               <ul class="list">
                 <li>Наличный расчет</li>
                 <li>Безналичный расчет</li>
               </ul>
             </div>
-            <div class="dostavka-block-2">
+
+            <div class="dostavka">
+              <div class="dostavka-title">Доставка:</div>
               <ul class="list">
                 <li>Доставка бесплатна при заказе на сумму 
                     от 100 000 тенге по городу Алматы</li>
@@ -466,9 +465,9 @@
             </div>
           </div>
 
-          <div class="dostavka">
+          <div class="dostavka-image">
             <img src="./img/dostavka.jpg" alt="">
-            <div class="dostavka-text">
+            <div class="dostavka-message">
               - Утром деньги - вечером стулья. 
               - А можно наоборот? 
               - Можно, но деньги вперед ;)
@@ -476,35 +475,32 @@
           </div>
         </div>
 
-        <div class="row justify-content-md-center">
-          <div class="col col-md-10">
-            <div class="form inverse wow slideInLeft">
-              <form action="/mail.php" method="post">
-                <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
-                <div class="form-content">
-                  <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
-                  <div class="input-div">
-                    <input type="text" class="input" name="name" placeholder="Ваше имя *">
-                  </div>
-                  
-                  <div class="input-div">
-                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required="">
-                    <span class="error-message">Заполните это поле</span>
-                  </div>
-  
-                  <div class="input-div">
-                    <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required="">
-                    <span class="error-message">Заполните это поле</span>
-                  </div>
-                  <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
-                </div>
-                <div class="form-info">** Ваши данные в безопасности и не будут 
-                    переданы третьим лицам</div>
-              </form>
+        <div class="form inverse wow slideInLeft">
+          <form action="/mail.php" method="post">
+            <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
+            <div class="form-content">
+              <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
             </div>
-          </div>
-          
+            <div class="form-info">** Ваши данные в безопасности и не будут 
+                переданы третьим лицам</div>
+          </form>
         </div>
+
       </div>
     </section>
 
