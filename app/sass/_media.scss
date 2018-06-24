@@ -29,6 +29,21 @@
       margin-left: 20px;
     }
   }
+
+  .section {
+    &-main {
+      .list {
+        flex-direction: column;
+        li {
+          margin-bottom: 20px;
+
+          &:first-child {
+            margin-right: 0; 
+          }  
+        }  
+      }
+    }
+  }
 }
 
 // ≥992px
@@ -85,6 +100,18 @@
   }    
 
   .section {
+    &-main {
+      &-title {
+        font-size: 25px;
+      }
+
+      .form {
+        .d-block {
+          display: inline !important;
+        }
+      }
+    }
+
     &-products {
       .product {
         margin-bottom: 20px;
@@ -165,7 +192,12 @@
   }
 
   .section {
-
+    &-main {
+      &-title {
+        font-size: 22px;
+        margin: 0 0 30px;
+      }
+    }
   }
 }
 
