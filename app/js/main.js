@@ -163,13 +163,14 @@ $(document).ready(function () {
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
+    nav: false,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
-      992: { items: 4, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true, dots: true },
+      992: { items: 4 },
     },
   });
 

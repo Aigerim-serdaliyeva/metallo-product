@@ -406,6 +406,16 @@
     }
   }
 
+  &-certificates {
+    background-image: url('../img/certificate-back.jpg');
+
+    .carousel-certificates {
+      .owl-item {
+        align-items: center;
+      }
+    }
+  }
+
   &-contact {
     position: relative;
     .map {
