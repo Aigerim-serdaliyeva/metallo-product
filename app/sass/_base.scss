@@ -257,19 +257,33 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	&::-webkit-input-placeholder {
-    color: #fff;
+    color: #000;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-    color: #fff;
+    color: #000;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #fff;
+    color: #000;
 		opacity: 1;
-	}
+  }
+  
+  .inverse & {
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+    
+    &::-moz-placeholder {
+      color: #fff;
+    }
+    
+    &:-ms-input-placeholder {
+      color: #fff;
+    } 
+  }
 	
 	&.error::-webkit-input-placeholder {
 		color: red;
@@ -287,7 +301,6 @@ h1, h2, h3, h4, h5, h6 {
 .form {
   position: relative;
   margin: 0 auto;
-  background-color: rgba(29, 29, 27, 0.8);
   
   &-block {
     .input-div {
@@ -306,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &--vertical {
+    background-color: rgba(29, 29, 27, 0.8);
     padding: 20px 15px 40px;
 
     .form-title {
@@ -320,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
 
     &, & + .form-info {
-      max-width: 785px;
+      max-width: 810px;
       margin: 0 auto;  
     }
   }

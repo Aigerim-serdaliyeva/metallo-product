@@ -248,6 +248,20 @@
       }
     }
   }
+
+  #thanks-page {
+    .section-thanks {
+      padding: 150px 0 50px;
+      &-title {
+        font-size: 30px;
+      }
+
+      &-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
 }
 
 
