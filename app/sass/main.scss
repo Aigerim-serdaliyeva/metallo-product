@@ -374,9 +374,15 @@
   }
 
   &-rukovoditel {
+    .carousel-rukovoditel {
+      max-width: 670px;
+      padding: 0 60px;
+      margin: 0 auto;
+    }
 
     .rukovoditel {
       max-width: 240px;
+      margin: 0 auto;
       position: relative;
 
       &-block {
