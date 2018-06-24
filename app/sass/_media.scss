@@ -48,6 +48,20 @@
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .form {
+    &-content {
+      flex-direction: column;
+
+      &, & + .form-info {
+        max-width: 500px;
+      }
+    }
+    .input-div, .button {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
   .hamburger {
     display: block;
   }    
@@ -100,6 +114,10 @@
   }    
 
   .section {
+    &-title {
+      font-size: 25px;
+    }
+
     &-main {
       &-title {
         font-size: 25px;
@@ -124,25 +142,7 @@
 }
 
 // ≥768px
-@include media-breakpoint-down(sm) {
-  .form {
-    &-content {
-      flex-direction: column;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .input-div, .button {
-      width: 100%;
-    }
-    .input-div {
-      margin-right: 0;
-      flex-basis: auto;
-    }    
-    &-info {
-      max-width: 500px;
-      margin: 0 auto;
-    }
-  }
+@include media-breakpoint-down(sm) {  
 
   .logo {
     max-width: 200px;
@@ -195,7 +195,7 @@
     &-title {
       font-size: 22px;
     }
-    
+
     &-main {
       &-title {
         font-size: 22px;
