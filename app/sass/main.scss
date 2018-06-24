@@ -418,16 +418,14 @@
 
   &-contact {
     position: relative;
-    .map {
-      // position: relative;
-    }
 
     .contact {
+      position: absolute;
+      top: 40px;
       padding: 15px 30px;
       background-color: rgba(29, 29, 27, 0.8);
       max-width: 338px;
-      position: absolute;
-      top: 80px;
+      text-align: center;
 
       &-title {
         font-size: 24px;
@@ -437,20 +435,21 @@
       }
 
       &-phone, &-telephone, &-address {
+        position: relative;
         text-align: left;
         color: #fff;
         margin-bottom: 25px;
+        padding-left: 45px;
 
         a {
           color: #fff;
         }
-        
-        padding-left: 45px;
-        position: relative;
+                
         &::before {
           content: "";
           position: absolute;
           background-repeat: no-repeat;
+          background-position: center center;
           width: 30px;
           height: 30px;
           left: 0;
@@ -472,10 +471,7 @@
 
       &-address {
         &::before {
-          width: 22px;
-          height: 30px;
           background-image: url('../img/contact-3.png');
-          left: 3px;
         }
       }
 
