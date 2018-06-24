@@ -2,6 +2,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
 @import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../node_modules/bootstrap/scss/utilities/_spacing.scss';
+@import '../../node_modules/bootstrap/scss/utilities/_display.scss';
 
 * {
   box-sizing: border-box;
@@ -205,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   &:hover {
     background-image: -moz-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(245,148,18) 0%, rgba(222,180,124,0.51) 49%, rgba(187,140,76,0) 100%);
     background-image: -webkit-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(245,148,18) 0%, rgba(222,180,124,0.51) 49%, rgba(187,140,76,0) 100%);
-    background-image: -ms-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(245,148,18) 0%, rgba(222,180,124,0.51) 49%, rgba(187,140,76,0) 100%);  
+    background-image: -ms-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(245,148,18) 0%, rgba(222,180,124,0.51) 49%, rgba(187,140,76,0) 100%);text-decoration: none;  
   }    
 
   &:active {

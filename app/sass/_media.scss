@@ -5,7 +5,12 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+  
+  .main-menu {
+    li {
+      margin-right: 20px;
+    }
+  }
 }
 
 // ≥992px
@@ -32,9 +37,9 @@
 
 	.main-menu {
     display: none;
-    background-color: #fff;
+    background-color: #000;
     position: fixed;
-    top: 89px;
+    top: 96px;
     left: 0;
     right: 0;
     text-align: left;
@@ -45,8 +50,6 @@
 		ul {
 			display: block;
 			height: auto;
-      padding: 0;
-      margin: 0;
 
 			li {
         margin: 0 0 5px;
@@ -136,9 +139,6 @@
   }
 
   .header {
-    .button {
-      display: none;
-    }
   }
 
   .section {
