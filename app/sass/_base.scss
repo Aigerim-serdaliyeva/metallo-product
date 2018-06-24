@@ -35,10 +35,16 @@ a {
   .inverse & {
     color: #fff;
   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 input, button, textarea, a {
-  outline: none;
+  &, &:hover {
+    outline: none;
+  }
 }
 
 p {
