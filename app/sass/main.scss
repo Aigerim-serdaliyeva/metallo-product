@@ -198,6 +198,15 @@
 
   &-advantages {
     .advantage {
+      margin-bottom: 20px;
+
+      &-image {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
       &-title {
         font-weight: normal;
       }

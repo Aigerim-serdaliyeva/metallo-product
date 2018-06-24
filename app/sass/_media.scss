@@ -168,7 +168,7 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
   .call-me {
-    display: block;
+    display: flex;
   }
 
   .remodal {
@@ -192,6 +192,10 @@
   }
 
   .section {
+    &-title {
+      font-size: 22px;
+    }
+    
     &-main {
       &-title {
         font-size: 22px;

@@ -22,6 +22,7 @@ body {
   font-family: $default_family;
   overflow-x: auto;
   opacity: 1;
+  letter-spacing: -0.3px;
 }
 
 img {
@@ -160,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-size: 25px;
     position: relative;
-    top: 5px;
+    top: 1px;
   }
 
   &:before,
