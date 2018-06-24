@@ -11,6 +11,24 @@
       margin-right: 20px;
     }
   }
+
+  .footer {
+    &-address {
+      margin-right: 20px;
+    }
+  
+    &-phone {
+      margin-right: 20px;
+  
+      &:nth-child(3) {
+        margin-right: 20px;
+      }  
+    }
+  
+    &-comand {
+      margin-left: 20px;
+    }
+  }
 }
 
 // ≥992px
@@ -23,10 +41,15 @@
     padding: 5px 0;
   }
 
-  .footer {
+  .footer {    
     text-align: center;
 
+    .grow {
+      display: none;
+    }
+
     &-content {
+      padding-bottom: 0;
       flex-direction: column;
 
       & > * {

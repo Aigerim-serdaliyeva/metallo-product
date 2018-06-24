@@ -15,7 +15,6 @@
   width: 100%;
   z-index: 98;
   padding: 10px 0;
-  color: #fff;
   font-size: 14px;
   background-color: rgba(#000, 0.7);
 
@@ -38,10 +37,6 @@
     font-size: 11px;
     font-weight: normal;
     width: 196px;
-  }
-
-  a {
-    color: #fff;
   }
 
   &-body {
@@ -68,32 +63,34 @@
 }
 
 .footer {
-  background-color: $accent;
-  font-size: 16px;
-
-  .logo {
-    margin-right: 100px;
-  }
+  background-color: #000;
+  font-size: 12px;
 
   &-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 20px;
   }
 
   &-address {
-    max-width: 165px;
-    margin-right: 40px;
+    margin-right: 80px;
   }
 
   &-phone {
     margin-right: 55px;
+
+    &:nth-child(3) {
+      margin-right: 20px;
+    }
+
+    a {
+      display: block;
+    }
   }
 
   &-comand {
-    margin-left: 100px;
+    margin-left: 75px;
 
     a {
       margin-top: 3px;
