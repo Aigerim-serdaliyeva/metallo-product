@@ -179,9 +179,11 @@ $(document).ready(function () {
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
+    items: 1,
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-    },
+      0: { mouseDrag: false, dots: true, nav: false },
+      576: { mouseDrag: true, dots: false, nav: true },
+    }
   });
 
   $(".carousel-rukovoditel").owlCarousel({
@@ -191,7 +193,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
     },
   });
 

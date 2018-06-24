@@ -348,17 +348,24 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel {
 	.owl {
     &-item {
+      float: none;
+      display: flex;
+
       img {
         width: auto;
         margin: 0 auto;
       }
     }
 
+    &-stage {
+      display: flex;
+    }
+
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
-			width: 44px;
-      height: 70px;
+			width: 26px;
+      height: 50px;
       background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
@@ -379,6 +386,7 @@ h1, h2, h3, h4, h5, h6 {
     &-dots {
       position: relative;
       text-align: center;
+      margin-top: 10px;
     }
     
     &-dot {

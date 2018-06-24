@@ -161,7 +161,25 @@
 
     &-main {
       
-    }    
+    }
+    
+    &-reviews {
+      .review {
+        flex-direction: column;
+
+        &-img {
+          margin: 0 0 10px;
+        }
+
+        &-author {
+          text-align: center;
+        }
+
+        &-summary {
+          justify-content: center;
+        }
+      }
+    }
   }
 }
 
@@ -200,6 +218,16 @@
       &-title {
         font-size: 22px;
         margin: 0 0 30px;
+      }
+    }
+
+    &-reviews {
+      .carousel-reviews {
+        padding: 0;
+      }
+
+      .review {
+        padding: 15px;
       }
     }
   }
