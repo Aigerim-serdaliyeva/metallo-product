@@ -385,29 +385,19 @@
       margin: 0 auto;
     }
 
-    .rukovoditel {
+    .block {
       max-width: 240px;
-      margin: 0 auto;
-      position: relative;
+    }
 
-      &-block {
-        width: 100%;
-        background-color: $black;
-        padding: 5px 10px;
-        position: absolute;
-        bottom: 0;
-      }
-
+    .rukovoditel {
       &-title {
         font-size: 16px;
         font-weight: bold;
-        color: $accent;
       }
 
       &-text {
         color: #fff;
-      }
-      
+      }      
     }
   }
 
