@@ -160,7 +160,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 5px 10px;
+    padding: 5px 0;
     color: $accent;
     background-color: $black;
   }
@@ -206,6 +206,10 @@
           margin-right: 70px;
         }
       }
+    }
+
+    .form {
+      padding-top: 20px;
     }
   }
 
@@ -495,7 +499,30 @@
     max-width: 850px;
   }
 
+  &-logo {
+    margin: 10px 0 20px;
+  }
 
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+
+  .block {
+    max-width: 160px;
+    margin: 0 0 20px auto;
+
+    &-content {
+      font-size: 12px;
+      font-weight: bold;
+      background-color: rgba(#000, 0.8);
+    }
+  }
+
+  .form {
+    width: 100%;
+  }
 }
 
 
@@ -523,35 +550,6 @@
       text-decoration: underline;
       color: $accent;
     }
-  }
-}
-
-
-.modal {
-  text-align: center;
-
-  &-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 30px;
-  }
-
-  form {
-    margin: 0 auto;
-    width: 300px;
-  }
-
-  .form-info {
-    text-align: left;
-    letter-spacing: 0;
-  }
-
-  .input-div {
-    margin-bottom: 10px;
-  }
-
-  .button {
-    width: 100%;
   }
 }
 

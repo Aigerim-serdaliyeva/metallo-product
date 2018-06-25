@@ -236,7 +236,7 @@
                 <img src="./img/product-1.jpg" alt="">
                 <h3 class="block-content">Запорная арматура</h3>
               </div>
-              <button class="button">Подробнее</button>
+              <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
             </div>
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
@@ -245,7 +245,7 @@
                 <img src="./img/product-2.jpg" alt="">
                 <h3 class="block-content">Металлопрокат</h3>
               </div>
-              <button class="button">Подробнее</button>
+              <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
             </div> 
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
@@ -254,7 +254,7 @@
                 <img src="./img/product-3.jpg" alt="">
                 <h3 class="block-content">Цветной металлопрокат</h3>
               </div>
-              <button class="button">Подробнее</button>
+              <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
             </div> 
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
@@ -263,7 +263,7 @@
                 <img src="./img/product-4.jpg" alt="">
                 <h3 class="block-content">Продукция под заказ</h3>
               </div>
-              <button class="button">Подробнее</button>
+              <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
           </div> 
           </div>
           
@@ -628,47 +628,78 @@
 
   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
-    <div class="modal-title">Оставьте заявку,
-      <br>и наш консультант Вам перезвонит</div>
-    <form action="/mail.php" method="post">
-      <input type="hidden" name="info" value="Обратный звонок">
-      <div class="input-div">
-        <input type="text" class="input" name="name" placeholder="Введите имя">
-      </div>
-      <div class="input-div">
-        <input type="tel" class="input" name="phone" placeholder="Введите номер*" required>
-        <span class="error-message">Заполните это поле</span>
+    
+    <div class="form form--vertical inverse">
+      <form action="/mail.php" method="post">
+        <div class="form-text">Оставьте заявку, <br>
+            и мы перезвоним Вам в течение 1 минуты</div>
+        <div class="form-block">
+          <input type="hidden" name="info" value="Заказать обратный звонок">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
 
-      </div>
-      <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
-      <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-    </form>
+          <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+
+          <div class="form-info">** Ваши данные в безопасности и не будут 
+              переданы третьим лицам</div>  
+        </div>
+      </form>
+    </div>
   </div>
 
   <div class="remodal more-modal" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
     <div class="row">
-      <div class="col-md-7">
-        <img src="./img/logo-black.png" alt="">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
         <h2 class="more-modal-title">Запорная арматура</h2>
-        <div class="row">
-          <div class="col-6">
-            <div class="more"><img src="./img/more-1-1.jpg" alt=""></div>
-          </div>
-          <div class="col-6">
-            <div class="more"><img src="./img/more-1-2.jpg" alt=""></div>
-          </div>
-          <div class="col-6">
-            <div class="more"><img src="./img/more-1-3.jpg" alt=""></div>
-          </div>
-          <div class="col-6">
-            <div class="more"><img src="./img/more-1-4.jpg" alt=""></div>
-          </div>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-1.jpg" alt="">
+                <h3 class="block-content">
+                  Задвижки стальные
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-2.jpg" alt="">
+                <h3 class="block-content">
+                  Задвижки чугунные
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-3.jpg" alt="">
+                <h3 class="block-content">
+                  Люки
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-4.jpg" alt="">
+                <h3 class="block-content">
+                  Пожарные гидранты
+                </h3>
+              </div>
+            </div>
+          </div>      
         </div>
       </div>
 
-      <div class="col-md-5">
+      <div class="col-md-6 d-flex">
         <div class="form form--vertical inverse">
           <form action="/mail.php" method="post">
             <div class="form-text">Строительный сезон в самом разгаре!</div>
@@ -677,8 +708,7 @@
                 <span class="d-block">на все последующие заказы</span> 
                 <span class="d-block">до конца 2018 года</span></div>
             <div class="form-block">
-              <input type="hidden" name="info" value="Закажите у нас металлопрокат на сумму от 500 тыс. тенге и получите скидку в 10% 
-              на все последующие заказы до конца 2018 года">
+              <input type="hidden" name="info" value="Заказать запорную арматуры">
               <div class="input-div">
                 <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
                 <span class="error-message">Заполните это поле</span>
@@ -703,6 +733,213 @@
           </form>
         </div>    
       </div>
+    </div>
+  </div>
+
+  <div class="remodal more-modal" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
+        <h2 class="more-modal-title">Металлопрокат</h2>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-1.jpg" alt="">
+                <h3 class="block-content">
+                    Листы
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-2.jpg" alt="">
+                <h3 class="block-content">
+                    Трубы
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-3.jpg" alt="">
+                <h3 class="block-content">
+                    Круги
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-4.jpg" alt="">
+                <h3 class="block-content">
+                    Квадраты
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-3.jpg" alt="">
+                <h3 class="block-content">
+                    Уголки
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-4.jpg" alt="">
+                <h3 class="block-content">
+                    Изделия с острым углом
+                </h3>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Заказать Металлопрокат">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal more-modal" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
+        <h2 class="more-modal-title">Цветной металлопрокат</h2>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-1.jpg" alt="">
+                <h3 class="block-content">
+                    Алюминий
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-2.jpg" alt="">
+                <h3 class="block-content">
+                    Бронза
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-3.jpg" alt="">
+                <h3 class="block-content">
+                    Медь
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-4.jpg" alt="">
+                <h3 class="block-content">
+                    Латунь
+                </h3>
+              </div>
+            </div>            
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Заказать Цветной металлопрокат">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal remodal-small modal" data-remodal-id="more-modal-4" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="form form--vertical inverse">
+      <form action="/mail.php" method="post">
+        <div class="form-text">Предоставим Вам в короткие сроки другую металлопрокатную продукцию под заказ</div>
+        <div class="form-block">
+          <input type="hidden" name="info" value="Предоставим Вам в короткие сроки другую металлопрокатную продукцию под заказ">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="ostavit_zaiakvu">Оставить заявку</button>
+
+          <div class="form-info">** Ваши данные в безопасности и не будут 
+              переданы третьим лицам</div>  
+        </div>
+      </form>
     </div>
   </div>
 
