@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=10" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=16" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -24,95 +24,572 @@
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <a href="tel:+" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+    <a href="tel:+77058782540" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
 
-    <header class="header">
+    <header class="header inverse">
       <div class="container">
         <div class="header-content">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
-          </a>
+          <div class="header-logo">
+            <a href="/" class="logo">
+              <img src="./img/logo.png" alt="">
+            </a>
 
-          <div class="grow"></div>
-
-          <h3 class="header-title">
-          </h3>
-
-          <div class="header-phone hidden-xxs">
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
+            <h3 class="header-title">
+              Оптовые поставки металлопроката
+              по всему Казахстану
+            </h3>        
           </div>
 
-          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>
+          <div class="header-body">
+            <div class="header-grafik d-none d-lg-block">
+              Понедельник-пятница <br>
+              с 09:00 до 18:00 
+            </div>
+  
+            <div class="header-phone d-none d-lg-block">
+              <a href="tel:+77273004416" class="text-phone" id="phone_number">+7 (727) 300-44-16</a>
+              <a href="tel:+77273004472" class="text-phone" id="phone_number">+7 (727) 300-44-72</a>
+            </div>
+  
+            <div class="header-phone d-none d-lg-block">
+              <a href="tel:+77058782540" class="text-phone" id="phone_number">+7 705 878-25-40</a>
+              <a href="tel:+77058782574" class="text-phone" id="phone_number">+7 705 878-25-74</a>
+            </div>
 
-          <button class="hamburger hamburger--elastic hamburger--accessible">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+            <nav class="main-menu">
+              <div class="container">
+                <ul>
+                  <li>                                                    
+                    <a class="link" href="#products">Продукция</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#dostavka">Доставка и оплата</a>
+                  </li>
+                  <li>
+                    <a class="link" href="#rukovoditel">Сотрудники</a>
+                  </li>                    
+                  <li>
+                    <a class="link" href="#contact">Контакты</a>
+                  </li>
+                  <li class="d-lg-none d-xl-none">
+                    <a href="tel:+77273004416" class="text-phone" id="phone_number">+7 (727) 300-44-16</a>
+                  </li>
+                  <li class="d-lg-none d-xl-none">
+                    <a href="tel:+77273004472" class="text-phone" id="phone_number">+7 (727) 300-44-72</a>
+                  </li>
+                  <li class="d-lg-none d-xl-none">
+                      <a href="tel:+77058782540" class="text-phone" id="phone_number">+7 705 878-25-40</a>
+                  </li>
+                  <li class="d-lg-none d-xl-none">
+                    <a href="tel:+77058782574" class="text-phone" id="phone_number">+7 705 878-25-74</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+  
+            <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+  
+            <button class="hamburger hamburger--elastic hamburger--accessible">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
         </div>
-
-        <nav class="main-menu">
-          <div class="container">
-            <ul>
-              <li>
-                <a class="link" href="#quarantee">Гарантии</a>
-              </li>
-              <li>
-                <a class="link" href="#praktika">Успешная практика</a>
-              </li>
-              <li>
-                <a class="link" href="#why">Выгоды для клиентов</a>
-              </li>
-              <li>
-                <a class="link" href="#sfera">Услуги</a>
-              </li>
-              <li>
-                <a class="link" href="#osnovatel">Основатель конторы</a>
-              </li>
-              <li>
-                <a class="link" href="#contact">Контакты</a>
-              </li>
-              <li class="visible-xs visible-sm">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-              </li>
-              <li class="visible-xs visible-sm">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
 
-<section class="section section-main" id="main">
-  <div class="container">
-      <div class="form wow slideInLeft">
-          <form action="/mail.php" method="post">
-              <div class="form-title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь
-                  нам и сэкономьте!</div>
-              <div class="form-content">
-                  <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-                  <div class="input-div">
-                      <input type="text" class="input" name="name" placeholder="Имя">
-                  </div>
-                  <div class="input-div">
-                      <input type="email" class="input" name="email" placeholder="E-mail *"
-                      required=""> <span class="error-message">Заполните это поле</span>
+    <section class="section section-main inverse" id="main">
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="col">
+            <h1 class="section-main-title">Избавьтеcь от срывов и задержек строительства, 
+                заказав металлопрокатную продукцию с доставкой
+                напрямую к Вашей стройке</h1>
 
-                  </div>
-                  <div class="input-div">
-                      <input type="tel" class="input" name="phone" placeholder="Номер телефона *"
-                      required=""> <span class="error-message">Заполните это поле</span>
+            <ul class="list">
+              <li>30 лет гарантии на продукцию</li>
+              <li>Доставка день в день</li>
+            </ul>
+          </div>
 
+          <div class="col-md-6 col-lg-5 col-xl-4">
+            <div class="form form--vertical wow slideInLeft">
+              <form action="/mail.php" method="post">
+                <div class="form-text">Строительный сезон в самом разгаре!</div>
+                <div class="form-title">Закажите у нас металлопрокат на сумму 
+                    <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                    <span class="d-block">на все последующие заказы</span> 
+                    <span class="d-block">до конца 2018 года</span></div>
+                <div class="form-block">
+                  <input type="hidden" name="info" value="Закажите у нас металлопрокат на сумму от 500 тыс. тенге и получите скидку в 10% 
+                  на все последующие заказы до конца 2018 года">
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                    <span class="error-message">Заполните это поле</span>
                   </div>
-                  <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-              </div>
-              <div class="form-info">*Гарантируем 100% сохранность Ваших данных</div>
-          </form>
+                  
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+
+                  <div class="input-div">
+                    <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+
+                  <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+                  <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+                  <div class="form-info">** Ваши данные в безопасности и не будут 
+                      переданы третьим лицам</div>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>        
       </div>
-  </div>
-</section>
+    </section>
+
+    <section class="section section-advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col section-title">
+              Преимущества компании "МЕТАЛЛОПРОДУКТ"
+          </div>
+        </div>
+        <div class="row justify-content-sm-center align-items-start">
+          
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-1.png" alt="">
+              </div>
+              <h4 class="advantage-title">Всегда в наличии более 
+                  5 000 наименований 
+                  продукции</h4>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-2.png" alt="">
+              </div>
+              <h4 class="advantage-title">Бесплатная доставка 
+                  во все регионы
+                  Казахстана</h4>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-3.png" alt="">
+              </div>
+              <h4 class="advantage-title">Скидочно-накопительная
+                  система для постоянных
+                  клиентов</h4>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-4.png" alt="">
+              </div>
+              <h4 class="advantage-title">Собственный транспорт
+                  для доставки</h4>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-5.png" alt="">
+              </div>
+              <h4 class="advantage-title">30 лет гарантии
+                  на продукцию</h4>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="advantage">
+              <div class="advantage-image">
+                <img src="./img/advantages-6.png" alt="">
+              </div>
+              <h4 class="advantage-title">Двойной контроль
+                  при погрузке товара</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-products" id="products">
+      <div class="container">
+        <div class="section-title accent">Всегда в наличии более 5 000 наименований металлопродукции:</div>
+
+        <div class="row">
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="product">
+              <div class="block">
+                <img src="./img/product-1.jpg" alt="">
+                <h3 class="block-content">Запорная арматура</h3>
+              </div>
+              <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="product">
+              <div class="block">
+                <img src="./img/product-2.jpg" alt="">
+                <h3 class="block-content">Металлопрокат</h3>
+              </div>
+              <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
+            </div> 
+          </div>
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="product">
+              <div class="block">
+                <img src="./img/product-3.jpg" alt="">
+                <h3 class="block-content">Цветной металлопрокат</h3>
+              </div>
+              <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
+            </div> 
+          </div>
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="product">
+              <div class="block">
+                <img src="./img/product-4.jpg" alt="">
+                <h3 class="block-content">Продукция под заказ</h3>
+              </div>
+              <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
+          </div> 
+          </div>
+          
+        </div>
+
+        <div class="form inverse wow slideInLeft">
+          <form action="/mail.php" method="post">
+            <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
+            <div class="form-content">
+              <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
+            </div>
+            <div class="form-info">** Ваши данные в безопасности и не будут 
+                переданы третьим лицам</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reviews" id="reviews">
+      <div class="container">
+        <div class="section-title">Отзывы наших клиентов</div>
+
+        <div class="owl-carousel carousel-reviews">
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-1.png" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Aibek Abishev</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                </div>
+                <div class="review-summary-text">5 мая 2018 г.</div>
+              </div>
+              <div class="review-text">Работаю с этой компанией уже три года. За это время меня ни разу не подвели по срокам доставки. 
+                  Уважаю людей, которые держат свое слово.      </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-2.png" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Олжас Амангелді</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star-2.png" alt="">
+                </div>
+                <div class="review-summary-text">11 февраля 2018 г.</div>
+              </div>
+              <div class="review-text">Для нас - строителей, очень важно хорошее качество материалов. Сложно найти компанию, где и качество и цена адекватные. Нам повезло, мы работаем с компанией "Металлопродукт". Все надежно и цены не задраны, очень всем рекомендую.</div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-3.png" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Дмитрий Храпов</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                </div>
+                <div class="review-summary-text">25 декабря 2016 г.</div>
+              </div>
+              <div class="review-text">С компанией Металлопродукт работаю продолжительное время, за период сотрудничества данная компания зарекомендовала себя как добросовестный и надежный поставщик металлопроката, регулярно приобретаю арматуру, доставляют качественную продукцию в оговоренные сроки. Нравится то, что есть накопительная система скидок, которая позволяет значительно экономить.      </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-4.jpg" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Виктор Романов</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                </div>
+                <div class="review-summary-text">22 декабря 2017 г.</div>
+              </div>
+              <div class="review-text">Заказываем металлопрокат и в том числе арматуру в компании Металлопродукт. Выбрали эту компанию за то, что всегда в наличии есть весь ассортимент металлопроката и доставляют действительно вовремя по привлекательным ценам. Рекомендую как надежного поставщика!      </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-5.jpg" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Makpal Andabayeva</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                </div>
+                <div class="review-summary-text">5 августа 2017 г.</div>
+              </div>
+              <div class="review-text">Несколько раз заказывала в компании Металлопродукт арматуру для нашей компании. Менеджеры отдела продаж мне очень помогли с подбором продукции и оформлением документов. Доставили оформленный заказ вовремя, качеством продукции довольны.      </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img">
+              <img src="./img/review-6.jpg" alt="">
+            </div>
+            
+            <div class="review-block">
+              <div class="review-author">Марат Хайруллин</div>
+              <div class="review-summary">
+                <div class="stars">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                  <img src="./img/star.png" alt="">
+                </div>
+                <div class="review-summary-text">12 декабря 2016 г.</div>
+              </div>
+              <div class="review-text">Хочу поделиться своим опытом работы с компанией «Металлопродукт». Что мне нравится в их работе, так это честность, пунктуальность и аккуратность персонала. Работаем с ними давно. Все устраивает. Претензий нет.
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dostavka" id="dostavka">
+      <div class="container">
+        <div class="section-title">Доставка и оплата</div> 
+
+        <div class="row">
+          <div class="col-lg-3 col-md-5">
+            <div class="dostavka">
+              <div class="dostavka-title">Формы оплаты:</div>
+              <ul class="list">
+                <li>Наличный расчет</li>
+                <li>Безналичный расчет</li>
+              </ul>
+            </div>    
+          </div>
+
+          <div class="col-md-7 col-lg-5 col-xl-4">
+            <div class="dostavka dostavka-2">
+              <div class="dostavka-title">Доставка:</div>
+              <ul class="list">
+                <li>Доставка бесплатна при заказе на сумму 
+                    от 100 000 тенге по городу Алматы</li>
+                <li>Варианты доставки:
+                  <div>
+                    - Самовывоз  <br>
+                    - Доставка транспортной компанией <br>
+                    - Доставка автопарком компании  
+                  </div>
+                </li>
+              </ul>
+            </div>    
+          </div>
+
+          <div class="col-lg-4">
+            <div class="text-right">
+              <div class="dostavka-image">
+                <img src="./img/dostavka.jpg" alt="">
+                <div class="dostavka-message">
+                  - Утром деньги - вечером стулья. <br>
+                  - А можно наоборот? <br>
+                  - Можно, но деньги вперед ;)
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+
+        <div class="form wow slideInLeft">
+          <form action="/mail.php" method="post">
+            <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
+            <div class="form-content">
+              <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
+            </div>
+            <div class="form-info">** Ваши данные в безопасности и не будут 
+                переданы третьим лицам</div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-rukovoditel" id="rukovoditel">
+      <div class="container">
+        <div class="section-title">Наши руководители отделов готовы ответить 
+            на вопросы по поводу логистики и сотрудничества</div>   
+        <div class="owl-carousel carousel-rukovoditel">
+          <div class="block">
+            <img src="./img/rukovoditel-1.jpg" alt="">
+            <div class="block-content">
+              <div class="rukovoditel-title">Халилов Камал</div>
+              <div class="rukovoditel-text">Руководитель отдела логистики <br>
+                  +7 778 189 7307</div>
+            </div>
+          </div>
+
+          <div class="block">
+            <img src="./img/rukovoditel-2.jpg" alt="">
+            <div class="block-content">
+              <div class="rukovoditel-title">Хасаханова Елена</div>
+              <div class="rukovoditel-text">Руководитель отдела продаж <br>
+                  +7 775 942 9550</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-certificates">
+      <div class="container">
+        <div class="section-title accent">Сертификаты партнерства</div>
+        
+        <div class="owl-carousel carousel-certificates">
+          <a href="./img/certificate-big-1.jpg" data-fancybox="certificateGallery" class="certificate">
+            <img src="./img/certificate-1.jpg" alt="">
+          </a>
+
+          <a href="./img/certificate-big-2.jpg" data-fancybox="certificateGallery" class="certificate">
+            <img src="./img/certificate-2.jpg" alt="">
+          </a>
+
+          <a href="./img/certificate-big-3.jpg" data-fancybox="certificateGallery" class="certificate">
+            <img src="./img/certificate-3.jpg" alt="">
+          </a>
+
+          <a href="./img/certificate-big-4.jpg" data-fancybox="certificateGallery" class="certificate">
+            <img src="./img/certificate-4.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd53c8229a2fa46b6c5b909f7a41aea70386495eaa77c799d89671d6d8d9e5b4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="container">
+        <div class="contact">
+          <div class="contact-title">Контакты</div>
+
+          <div class="contact-telephone">
+            <a href="tel:+77273004416" class="text-phone" id="phone_number">+7 (727) 300-44-16</a> <br>
+            <a href="tel:+77273004472" class="text-phone" id="phone_number">+7 (727) 300-44-72</a>
+          </div>
+
+          <div class="contact-phone">
+            <a href="tel:+77058782540" class="text-phone" id="phone_number">+7 705 878-25-40</a> <br>
+            <a href="tel:+77058782574" class="text-phone" id="phone_number">+7 705 878-25-74</a>
+          </div>
+
+          <div class="contact-address">
+              г. Алматы, пр-т Сейфуллина,
+              д. 404/67, офис 219        
+          </div>
+
+          <div class="contact-zvonok">
+            <div class="contact-zvonok-title">Закажите обратный звонок, 
+                и мы Вам перезвоним!</div>
+
+            <button class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer inverse">
       <div class="container">
@@ -121,18 +598,28 @@
             <img src="./img/logo.png" alt="">
           </a>
 
-          <div class="footer-address"></div>
-          <div class="footer-phone">Телефоны:
-            <br>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
+          <div class="grow"></div>
 
-            <br>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
-
+          <div class="footer-phone">
+            <a href="tel:+77273004416" class="text-phone" id="phone_number">+7 (727) 300-44-16</a>
+            <a href="tel:+77273004472" class="text-phone" id="phone_number">+7 (727) 300-44-72</a>
           </div>
-          <div class="footer-comand">Созддано командой
-            <br>
-            <img src="./img/marketing-time.png" alt="">
+
+          <div class="footer-phone">
+            <a href="tel:+77058782540" class="text-phone" id="phone_number">+7 705 878-25-40</a>
+            <a href="tel:+77058782574" class="text-phone" id="phone_number">+7 705 878-25-74</a>
+          </div>
+
+          <div class="footer-address">
+            г. Алматы, <br>
+            пр-т Сейфуллина, <br>
+            д. 404/67, офис 219
+          </div>
+
+          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+
+          <div class="footer-comand">Разработано командой
+            <a href="//marketing-time.kz" target="_blank"><img src="./img/marketing-time.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -140,26 +627,321 @@
   </div>
 
   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="modal-title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
-  <form action="/mail.php" method="post">
-    <input type="hidden" name="info" value="Обратный звонок">
-    <div class="input-div">
-      <input type="text" class="input" name="name" placeholder="Введите имя">
-    </div>
-    <div class="input-div">
-      <input type="tel" class="input" name="phone" placeholder="Введите номер*" required>
-      <span class="error-message">Заполните это поле</span>
-
-    </div>
-    <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
-    <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-  </form>
-</div>
-
-  
+    <button data-remodal-action="close" class="remodal-close"></button>
     
-  
+    <div class="form form--vertical inverse">
+      <form action="/mail.php" method="post">
+        <div class="form-text">Оставьте заявку, <br>
+            и мы перезвоним Вам в течение 1 минуты</div>
+        <div class="form-block">
+          <input type="hidden" name="info" value="Заказать обратный звонок">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+
+          <div class="form-info">** Ваши данные в безопасности и не будут 
+              переданы третьим лицам</div>  
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal more-modal" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
+        <h2 class="more-modal-title">Запорная арматура</h2>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-1.jpg" alt="">
+                <h3 class="block-content">
+                  Задвижки стальные
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-2.jpg" alt="">
+                <h3 class="block-content">
+                  Задвижки чугунные
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-3.jpg" alt="">
+                <h3 class="block-content">
+                  Люки
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-1-4.jpg" alt="">
+                <h3 class="block-content">
+                  Пожарные гидранты
+                </h3>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Заказать запорную арматуры">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal more-modal" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
+        <h2 class="more-modal-title">Металлопрокат</h2>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-1.jpg" alt="">
+                <h3 class="block-content">
+                    Листы
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-2.jpg" alt="">
+                <h3 class="block-content">
+                    Трубы
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-3.jpg" alt="">
+                <h3 class="block-content">
+                    Круги
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-4.jpg" alt="">
+                <h3 class="block-content">
+                    Квадраты
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-3.jpg" alt="">
+                <h3 class="block-content">
+                    Уголки
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-2-4.jpg" alt="">
+                <h3 class="block-content">
+                    Изделия с острым углом
+                </h3>
+              </div>
+            </div>
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Заказать Металлопрокат">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal more-modal" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="./img/logo-black.png" alt="" class="more-modal-logo">
+        <h2 class="more-modal-title">Цветной металлопрокат</h2>
+        <div class="more-modal-content">
+          <div class="row">
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-1.jpg" alt="">
+                <h3 class="block-content">
+                    Алюминий
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-2.jpg" alt="">
+                <h3 class="block-content">
+                    Бронза
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-3.jpg" alt="">
+                <h3 class="block-content">
+                    Медь
+                </h3>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="block">
+                <img src="./img/more-3-4.jpg" alt="">
+                <h3 class="block-content">
+                    Латунь
+                </h3>
+              </div>
+            </div>            
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Заказать Цветной металлопрокат">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="remodal remodal-small modal" data-remodal-id="more-modal-4" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    
+    <div class="form form--vertical inverse">
+      <form action="/mail.php" method="post">
+        <div class="form-text">Предоставим Вам в короткие сроки другую металлопрокатную продукцию под заказ</div>
+        <div class="form-block">
+          <input type="hidden" name="info" value="Предоставим Вам в короткие сроки другую металлопрокатную продукцию под заказ">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+          
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="ostavit_zaiakvu">Оставить заявку</button>
+
+          <div class="form-info">** Ваши данные в безопасности и не будут 
+              переданы третьим лицам</div>  
+        </div>
+      </form>
+    </div>
+  </div>
 
   <script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>
