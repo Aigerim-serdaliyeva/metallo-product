@@ -110,7 +110,7 @@
                 заказав металлопрокатную продукцию с доставкой
                 напрямую к Вашей стройке</h1>
 
-            <ul class="list">
+            <ul class="list wow slideInLeft">
               <li>30 лет гарантии на продукцию</li>
               <li>Доставка день в день</li>
             </ul>
@@ -162,7 +162,7 @@
               Преимущества компании "МЕТАЛЛОПРОДУКТ"
           </div>
         </div>
-        <div class="row justify-content-sm-center align-items-start">
+        <div class="row justify-content-sm-center align-items-start wow slideInUp">
           
           <div class="col-6 col-sm-4 col-md-3 col-lg-2">
             <div class="advantage">
@@ -229,69 +229,71 @@
       <div class="container">
         <div class="section-title accent">Всегда в наличии более 5 000 наименований металлопродукции:</div>
 
-        <div class="row">
-          <div class="col-6 col-sm-6 col-lg-3">
-            <div class="product">
-              <div class="block">
-                <img src="./img/product-1.jpg" alt="">
-                <h3 class="block-content">Запорная арматура</h3>
+        <div class="section-products-content wow slideInUp">
+          <div class="row">
+              <div class="col-6 col-sm-6 col-lg-3">
+                <div class="product">
+                  <div class="block">
+                    <img src="./img/product-1.jpg" alt="">
+                    <h3 class="block-content">Запорная арматура</h3>
+                  </div>
+                  <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
+                </div>
               </div>
-              <button class="button" data-remodal-target="more-modal-1">Подробнее</button>
-            </div>
-          </div>
-          <div class="col-6 col-sm-6 col-lg-3">
-            <div class="product">
-              <div class="block">
-                <img src="./img/product-2.jpg" alt="">
-                <h3 class="block-content">Металлопрокат</h3>
+              <div class="col-6 col-sm-6 col-lg-3">
+                <div class="product">
+                  <div class="block">
+                    <img src="./img/product-2.jpg" alt="">
+                    <h3 class="block-content">Металлопрокат</h3>
+                  </div>
+                  <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
+                </div> 
               </div>
-              <button class="button" data-remodal-target="more-modal-2">Подробнее</button>
-            </div> 
-          </div>
-          <div class="col-6 col-sm-6 col-lg-3">
-            <div class="product">
-              <div class="block">
-                <img src="./img/product-3.jpg" alt="">
-                <h3 class="block-content">Цветной металлопрокат</h3>
+              <div class="col-6 col-sm-6 col-lg-3">
+                <div class="product">
+                  <div class="block">
+                    <img src="./img/product-3.jpg" alt="">
+                    <h3 class="block-content">Цветной металлопрокат</h3>
+                  </div>
+                  <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
+                </div> 
               </div>
-              <button class="button" data-remodal-target="more-modal-3">Подробнее</button>
-            </div> 
-          </div>
-          <div class="col-6 col-sm-6 col-lg-3">
-            <div class="product">
-              <div class="block">
-                <img src="./img/product-4.jpg" alt="">
-                <h3 class="block-content">Продукция под заказ</h3>
-              </div>
-              <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
-          </div> 
-          </div>
-          
-        </div>
-
-        <div class="form inverse wow slideInLeft">
-          <form action="/mail.php" method="post">
-            <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
-            <div class="form-content">
-              <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+              <div class="col-6 col-sm-6 col-lg-3">
+                <div class="product">
+                  <div class="block">
+                    <img src="./img/product-4.jpg" alt="">
+                    <h3 class="block-content">Продукция под заказ</h3>
+                  </div>
+                  <button class="button" data-remodal-target="more-modal-4">Подробнее</button>
+              </div> 
               </div>
               
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <div class="input-div">
-                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
-                <span class="error-message">Заполните это поле</span>
-              </div>
-              <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
             </div>
-            <div class="form-info">** Ваши данные в безопасности и не будут 
-                переданы третьим лицам</div>
-          </form>
+    
+            <div class="form inverse">
+              <form action="/mail.php" method="post">
+                <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
+                <div class="form-content">
+                  <input type="hidden" name="info" value="Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции">
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                  </div>
+                  
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+                  <button class="button ajax-submit" type="submit" id="uznat_optovye_seny">Узнать оптовые цены</button>
+                </div>
+                <div class="form-info">** Ваши данные в безопасности и не будут 
+                    переданы третьим лицам</div>
+              </form>
+            </div>
         </div>
       </div>
     </section>
@@ -300,7 +302,7 @@
       <div class="container">
         <div class="section-title">Отзывы наших клиентов</div>
 
-        <div class="owl-carousel carousel-reviews">
+        <div class="owl-carousel carousel-reviews wow slideInLeft">
           <div class="review">
             <div class="review-img">
               <img src="./img/review-1.png" alt="">
@@ -478,7 +480,7 @@
           </div>
         </div>
 
-        <div class="form wow slideInLeft">
+        <div class="form wow slideInUp">
           <form action="/mail.php" method="post">
             <div class="form-title">Оставьте заявку и узнайте оптовые цены на весь ассортимент нашей продукции</div>
             <div class="form-content">
@@ -511,7 +513,7 @@
       <div class="container">
         <div class="section-title">Наши руководители отделов готовы ответить 
             на вопросы по поводу логистики и сотрудничества</div>   
-        <div class="owl-carousel carousel-rukovoditel">
+        <div class="owl-carousel carousel-rukovoditel wow slideInLeft">
           <div class="block">
             <img src="./img/rukovoditel-1.jpg" alt="">
             <div class="block-content">
@@ -537,7 +539,7 @@
       <div class="container">
         <div class="section-title accent">Сертификаты партнерства</div>
         
-        <div class="owl-carousel carousel-certificates">
+        <div class="owl-carousel carousel-certificates wow slideInUp">
           <a href="./img/certificate-big-1.jpg" data-fancybox="certificateGallery" class="certificate">
             <img src="./img/certificate-1.jpg" alt="">
           </a>
@@ -563,7 +565,7 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afd53c8229a2fa46b6c5b909f7a41aea70386495eaa77c799d89671d6d8d9e5b4&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
       <div class="container">
-        <div class="contact">
+        <div class="contact wow slideInUp">
           <div class="contact-title">Контакты</div>
 
           <div class="contact-telephone">
