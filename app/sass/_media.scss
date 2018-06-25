@@ -257,7 +257,14 @@
     &-main {
       &-title {
         font-size: 22px;
+        font-weight: 600;
         margin: 0 0 30px;
+      }
+    }
+
+    &-products {
+      .block {
+        box-shadow: 0px 0px 6.4px 1.6px rgba($accent, 1);
       }
     }
 
@@ -268,6 +275,16 @@
 
       .review {
         padding: 15px;
+      }
+    }
+
+    &-contact {
+      overflow: hidden;
+
+      .map {
+        margin-top: -100px;
+        height: 300px;
+        overflow: hidden;
       }
     }
   }

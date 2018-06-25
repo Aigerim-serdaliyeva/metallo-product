@@ -5,8 +5,8 @@ if(isset($_POST["info"])) {
   $method = $_SERVER['REQUEST_METHOD'];
 
   $project_name = "VPartners";
-  $admin_email  = "info@vpartners.kz, client@marketing-time.kz";
-  $server_mail = "<info@vpartners.kz>";
+  $admin_email  = "client@marketing-time.kz";
+  $server_mail = "<>";
   $form_subject = "Заявка";
 
 
