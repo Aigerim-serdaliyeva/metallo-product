@@ -151,6 +151,21 @@
   }
 }
 
+.block {
+  position: relative;
+  margin: 0 auto;
+
+  &-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+    color: $accent;
+    background-color: $black;
+  }
+}
+
 .section {
   padding: 40px 0 35px;
   background-size: cover;
@@ -221,25 +236,19 @@
       max-width: 260px;
       margin: 0 auto;
 
-      &-title {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        font-size: 16px;
-        color: $accent;
-        padding: 10px 0;
-        background-color: $black;
-      }
-
-      &-block {
-        position: relative;
+      .block {
         margin-bottom: 15px;
 
         &:hover {
           box-shadow: 0px 0px 6.4px 1.6px rgba($accent, 1);
         }
-      }
+
+        &-content {
+          padding: 10px;
+          font-size: 16px;
+          font-weight: normal;
+        }
+      }      
 
       .button {
         width: 100%;
@@ -487,8 +496,16 @@
 
 }
 
-.remodal.more-modal {
-  max-width: 850px;
+.more-modal {
+  text-align: center;
+  background-image: url('../img/more-back.jpg');
+  background-size: cover;
+
+  &.remodal {
+    max-width: 850px;
+  }
+
+
 }
 
 

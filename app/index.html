@@ -151,9 +151,7 @@
               </form>
             </div>
           </div>
-        </div>
-
-        
+        </div>        
       </div>
     </section>
 
@@ -229,45 +227,41 @@
 
     <section class="section section-products" id="products">
       <div class="container">
-        <div class="row">
-          <div class="col"> 
-            <div class="section-title accent">Всегда в наличии более 5 000 наименований металлопродукции:</div>
-          </div>
-        </div>
+        <div class="section-title accent">Всегда в наличии более 5 000 наименований металлопродукции:</div>
 
         <div class="row">
           <div class="col-6 col-sm-6 col-lg-3">
             <div class="product">
-              <div class="product-block">
+              <div class="block">
                 <img src="./img/product-1.jpg" alt="">
-                <div class="product-title">Запорная арматура</div>
+                <h3 class="block-content">Запорная арматура</h3>
               </div>
               <button class="button">Подробнее</button>
             </div>
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
             <div class="product">
-              <div class="product-block">
+              <div class="block">
                 <img src="./img/product-2.jpg" alt="">
-                <div class="product-title">Металлопрокат</div>
+                <h3 class="block-content">Металлопрокат</h3>
               </div>
               <button class="button">Подробнее</button>
             </div> 
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
             <div class="product">
-              <div class="product-block">
+              <div class="block">
                 <img src="./img/product-3.jpg" alt="">
-                <div class="product-title">Цветной металлопрокат</div>
+                <h3 class="block-content">Цветной металлопрокат</h3>
               </div>
               <button class="button">Подробнее</button>
             </div> 
           </div>
           <div class="col-6 col-sm-6 col-lg-3">
             <div class="product">
-              <div class="product-block">
+              <div class="block">
                 <img src="./img/product-4.jpg" alt="">
-                <div class="product-title">Продукция под заказ</div>
+                <h3 class="block-content">Продукция под заказ</h3>
               </div>
               <button class="button">Подробнее</button>
           </div> 
@@ -304,7 +298,7 @@
 
     <section class="section section-reviews" id="reviews">
       <div class="container">
-          <div class="section-title">Отзывы наших клиентов</div>
+        <div class="section-title">Отзывы наших клиентов</div>
 
         <div class="owl-carousel carousel-reviews">
           <div class="review">
@@ -662,6 +656,8 @@
 
     <div class="row">
       <div class="col-md-7">
+        <img src="./img/logo-black.png" alt="">
+        <h2 class="more-modal-title">Запорная арматура</h2>
         <div class="row">
           <div class="col-6">
             <div class="more"><img src="./img/more-1-1.jpg" alt=""></div>
@@ -679,19 +675,39 @@
       </div>
 
       <div class="col-md-5">
-        <form action="/mail.php" method="post">
-          <input type="hidden" name="info" value="Обратный звонок">
-          <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Введите имя">
-          </div>
-          <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Введите номер*" required>
-            <span class="error-message">Заполните это поле</span>
-    
-          </div>
-          <div class="form-info">* Ваши данные в безопасности и не будут переданы третьим лицам</div>
-          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-        </form>      
+        <div class="form form--vertical inverse">
+          <form action="/mail.php" method="post">
+            <div class="form-text">Строительный сезон в самом разгаре!</div>
+            <div class="form-title">Закажите у нас металлопрокат на сумму 
+                <span class="d-block">от 500 тыс. тенге и получите скидку в 10%</span> 
+                <span class="d-block">на все последующие заказы</span> 
+                <span class="d-block">до конца 2018 года</span></div>
+            <div class="form-block">
+              <input type="hidden" name="info" value="Закажите у нас металлопрокат на сумму от 500 тыс. тенге и получите скидку в 10% 
+              на все последующие заказы до конца 2018 года">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Ваше имя *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+              
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="Укажите e-mail *" required>
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="uspet_zakrepit_za_soboi_skidku">Успеть закрепить за собой скидку</button>
+
+              <div class="form-info">* Предложение истекает 31 июля 2018 года</div>
+              <div class="form-info">** Ваши данные в безопасности и не будут 
+                  переданы третьим лицам</div>  
+            </div>
+          </form>
+        </div>    
       </div>
     </div>
   </div>
