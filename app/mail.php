@@ -5,9 +5,9 @@ if(isset($_POST["info"])) {
   $method = $_SERVER['REQUEST_METHOD'];
 
   $project_name = "MetalloProduct";
-  $admin_email  = "info@metalloproduct.kz";
+  $admin_email  = "info@metalloproduct.kz, client@marketing-time.kz";
   $server_mail = "<info@metalloproduct.kz>";
-  $form_subject = "Zayavka";
+  $form_subject = "Заявка";
 
 
   //Script Foreach
@@ -37,7 +37,7 @@ if(isset($_POST["info"])) {
   'From: '.$project_name.' '.$server_mail. PHP_EOL .
   'Reply-To: '.$admin_email.'' . PHP_EOL;
 
-  mail($admin_email, adopt($form_subject), $message, $headers);
+  mail($admin_email, $form_subject, $message, $headers);
 
   header("Location: /thanks.html");
   
