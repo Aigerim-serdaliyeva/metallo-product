@@ -5,9 +5,9 @@ if(isset($_POST["info"])) {
   $method = $_SERVER['REQUEST_METHOD'];
 
   $project_name = "MetalloProduct";
-  $admin_email  = "info@metalloproduct.kz, client@marketing-time.kz";
+  $admin_email  = "info@metalloproduct.kz";
   $server_mail = "<info@metalloproduct.kz>";
-  $form_subject = "Заявка";
+  $form_subject = "Zayavka";
 
 
   //Script Foreach
