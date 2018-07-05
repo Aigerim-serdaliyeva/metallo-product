@@ -47,12 +47,12 @@
     align-content: space-between;
   }
 
-  &-grafik {
+  &-grafik, &-mail {
     margin-right: 35px;
   }
 
   &-phone {
-    &:nth-child(2) {
+    &:nth-child(3) {
       margin-right: 70px;
     }
 
@@ -432,7 +432,7 @@
         margin-bottom: 18px;
       }
 
-      &-phone, &-telephone, &-address {
+      &-phone, &-telephone, &-address, &-mail {
         position: relative;
         color: #fff;
         margin-bottom: 25px;
@@ -469,6 +469,13 @@
       &-address {
         &::before {
           background-image: url('../img/contact-3.png');
+        }
+      }
+
+      &-mail {
+        &::before {
+          top: -6px;
+          background-image: url('../img/mail.png');
         }
       }
 
